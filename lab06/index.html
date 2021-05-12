@@ -40,7 +40,7 @@
 
 var margin = {top: 20, right: 60, bottom: 35, left: 30};
 
-var width = 18 * data.length - margin.left - margin.right,
+var width = 1500 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
 
 var svg = d3.select("body")
@@ -73,7 +73,7 @@ var y = d3.scale.linear()
   .domain([0, d3.max(dataset, function(d) {  return d3.max(d, function(d) { return d.y0 + d.y; });  })])
   .range([height, 0]);
 
-var colors = ["#003060", "#0066CC", "#46A3FF", "#84C1FF", "#80FFFF"];
+  var colors = ["#003060", "#0066CC", "#46A3FF", "#84C1FF", "#80FFFF"];
 
 
 // Define and draw axes
